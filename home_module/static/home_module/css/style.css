@@ -1,3 +1,158 @@
-.logo img {
-    width: 500px;
+@font-face {
+    font-family: RaleWay;
+    src: url("../fonts/ralway/Raleway-Medium.ttf");
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "RaleWay", Helvetica, sans-serif !important;
+    color: #444;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+header {
+    background-image: url("../img/dark_tint.png"), url("../img/bokeh_car_lights_bg.jpg");
+}
+
+header li {
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+header h1 {
+    display: inline;
+    float: left;
+}
+
+header ul {
+    text-align: right;
+    margin-top: 5px;
+}
+
+header li a {
+    color: #cdced0;
+    transition: color 0.2s ease-in-out;
+}
+
+header li a:hover {
+    color: #fff;
+}
+
+.top-menu {
+    padding: 40px;
+}
+
+.c-btn {
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 0;
+    font-size: 1.5vw;
+    background-color: #ffffff;
+}
+
+.c-btn-gray {
+    background-color: #fff;
+    color: #444;
+}
+
+.c-btn-big {
+    font-size: 2.3vw;
+    padding: 10px 40px;
+}
+
+.c-btn-blue {
+    background-color: #3cadd4;
+    color: #fff !important;
+}
+
+.c-btn-dark {
+    background-color: #383b43;
+    color: #ffffff !important;
+}
+
+.header-content {
+    text-align: center;
+    font-size: 1.5vw;
+    color: #fff;
+    padding: 120px 0;
+}
+
+.header-content h2 {
+    font-size: 5vw;
+    line-height: 100px;
+}
+
+.header-content p {
+    font-size: 2.5vw;
+    line-height: 100px;
+}
+
+.c-container {
+    background-color: #F5F5F5;
+}
+
+.services-header {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.services-header h2 {
+    font-weight: bold;
+    font-size: 4.5vw;
+}
+
+.services-header p {
+    font-size: 2.2vw;
+    color: #858585;
+}
+
+/*-----------*/
+.box i {
+    color: #fff;
+    padding: 30px;
+    border-radius: 100%;
+    font-size: 3vw;
+}
+
+
+.box {
+    padding: 20px;
+    margin: 0 20px;
+    width: calc(calc(100% / 3) - 40px);
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.services-content {
+    padding-bottom: 100px;
+}
+
+.color-blue {
+    background-color: #3cadd4;
+}
+
+.color-green {
+    background-color: #add43c;
+}
+
+.color-red {
+    background-color: #d43c61;
 }
