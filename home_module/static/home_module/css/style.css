@@ -1,0 +1,35 @@
+@font-face {
+    font-family: IRANSans;
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/IranSens/IRANSansWeb.woff");
+}
+
+
+body {
+    font-family: IRANSans, serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.burger-menu {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
