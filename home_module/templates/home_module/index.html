@@ -12,42 +12,208 @@
     <title>Arshia</title>
 </head>
 <body>
-<nav>
-    <div class="container">
-        <div class="navbar navbar-expand-md justify-content-between">
-
-            <!-- دکمه فقط موبایل -->
-            <button class="burger-menu d-md-none pt-2"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#myNavbar"
-                    type="button">
-                <i class="fa fa-bars"></i>
-            </button>
-
-            <!-- منو: موبایل مخفی، دسکتاپ باز -->
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav fs-5 flex-column flex-md-row">
-                    <li class="nav-item p-3"><a href="#" class="nav-link">خانه</a></li>
-                    <li class="nav-item p-3"><a href="#" class="nav-link">پست ها</a></li>
-                    <li class="nav-item p-3"><a href="#" class="nav-link">فروشگاه</a></li>
-                    <li class="nav-item p-3"><a href="#" class="nav-link">تماس با ما</a></li>
-                </ul>
+<!-- Header Section Starts -->
+<header>
+    <nav>
+        <div class="container">
+            <div class="navbar navbar-expand-md justify-content-between">
+                <!-- Burger Menu -->
+                <button class="burger-menu d-md-none pt-2" data-bs-toggle="collapse" data-bs-target="#myNavbar" type="button"><i class="fa fa-bars"></i></button>
+                <!-- nav items -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav fs-5 flex-column flex-md-row">
+                        <li class="nav-item p-3"><a href="#" class="nav-link">خانه</a></li>
+                        <li class="nav-item p-3"><a href="#" class="nav-link">پست ها</a></li>
+                        <li class="nav-item p-3"><a href="#" class="nav-link">فروشگاه</a></li>
+                        <li class="nav-item p-3"><a href="#" class="nav-link">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <!-- nav logo -->
+                <div class="logo-box navbar-brand d-flex">
+                    <a href="#">
+                        <img style="width: 100%" src="{% static 'home_module/img/logo/default.svg' %}" class="logo-img">
+                    </a>
+                </div>
             </div>
+            <hr>
+            <!-- Slider Section Starts -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- لوگو بدون تغییر -->
-            <div class="logo-box navbar-brand d-flex">
-                <a href="#">
-                    <img style="width: 100%"
-                         src="{% static 'home_module/img/logo/default.svg' %}"
-                         class="logo-img"
-                         alt="">
-                </a>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+                <!-- Slider Section Started -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'home_module/img/pic02.jpg' %}" class="d-block carousel-img" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="{% static 'home_module/img/111.jpg' %}" class="d-block carousel-img" alt="">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="{% static 'home_module/img/pic07.jpg' %}" class="d-block carousel-img" alt="">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <!-- Slider Section Ends -->
             </div>
-
+            <hr>
+            <!-- Slider Section Ends -->
         </div>
-    </div>
-</nav>
+    </nav>
+    <!-- Searchbar -->
+    <section class="search-bar pt-4">
+        <div class="container">
+            <form class="d-flex mx-auto w-75">
+                <input type="text"
+                       class="form-control"
+                       placeholder="جستجو کنید...">
 
+                <button class="btn btn-success ms-2" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+</header>
+<!-- Header Section End -->
+
+<!-- Main Section Starts -->
+<main>
+    <div class="container">
+        <div class="row">
+            <!-- News Section Starts -->
+            <div class="row">
+                <!-- Posts Items -->
+                <div class="col-md-6 col-lg-4 pt-4 rounded">
+                    <div class="card">
+                        <img src="{% static 'home_module/img/bokeh_car_lights_bg.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title p-1">میکروتیک چیست؟ و چه کاربردهایی دارد؟</h5>
+                            <ul class="nav">
+                                <li class="nav-item"><i class="fa fa-user pe-1"></i>ارشیا صمیمی فر</li>
+                                <li class="nav-item ps-1">1404-05-12<i class="fa fa-clock pe-1"></i></li>
+                            </ul>
+                            <p class="card-text p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto corporis iusto maxime placeat quas reprehenderit tempore! Exercitationem expedita, iste magnam nostrum numquam recusandae repellendus sapiente. Doloremque molestiae optio voluptatibus.</p>
+                            <a href="#" class="card-link btn btn-success w-100">
+                                مشاهده
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Posts Items -->
+                <div class="col-md-6 col-lg-4 pt-4 rounded">
+                    <div class="card">
+                        <img src="{% static 'home_module/img/bokeh_car_lights_bg.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title p-1">میکروتیک چیست؟ و چه کاربردهایی دارد؟</h5>
+                            <ul class="nav">
+                                <li class="nav-item"><i class="fa fa-user pe-1"></i>ارشیا صمیمی فر</li>
+                                <li class="nav-item ps-1">1404-05-12<i class="fa fa-clock pe-1"></i></li>
+                            </ul>
+                            <p class="card-text p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto corporis iusto maxime placeat quas reprehenderit tempore! Exercitationem expedita, iste magnam nostrum numquam recusandae repellendus sapiente. Doloremque molestiae optio voluptatibus.</p>
+                            <a href="#" class="card-link btn btn-success w-100">
+                                مشاهده
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Posts Items -->
+                <div class="col-md-6 col-lg-4 pt-4 rounded">
+                    <div class="card">
+                        <img src="{% static 'home_module/img/bokeh_car_lights_bg.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title p-1">میکروتیک چیست؟ و چه کاربردهایی دارد؟</h5>
+                            <ul class="nav">
+                                <li class="nav-item"><i class="fa fa-user pe-1"></i>ارشیا صمیمی فر</li>
+                                <li class="nav-item ps-1">1404-05-12<i class="fa fa-clock pe-1"></i></li>
+                            </ul>
+                            <p class="card-text p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto corporis iusto maxime placeat quas reprehenderit tempore! Exercitationem expedita, iste magnam nostrum numquam recusandae repellendus sapiente. Doloremque molestiae optio voluptatibus.</p>
+                            <a href="#" class="card-link btn btn-success w-100">
+                                مشاهده
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Posts Items -->
+                <div class="col-md-6 col-lg-4 pt-4 rounded">
+                    <div class="card">
+                        <img src="{% static 'home_module/img/bokeh_car_lights_bg.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title p-1">میکروتیک چیست؟ و چه کاربردهایی دارد؟</h5>
+                            <ul class="nav">
+                                <li class="nav-item"><i class="fa fa-user pe-1"></i>ارشیا صمیمی فر</li>
+                                <li class="nav-item ps-1">1404-05-12<i class="fa fa-clock pe-1"></i></li>
+                            </ul>
+                            <p class="card-text p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto corporis iusto maxime placeat quas reprehenderit tempore! Exercitationem expedita, iste magnam nostrum numquam recusandae repellendus sapiente. Doloremque molestiae optio voluptatibus.</p>
+                            <a href="#" class="card-link btn btn-success w-100">
+                                مشاهده
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Posts Items -->
+                <div class="col-md-6 col-lg-4 pt-4 rounded">
+                    <div class="card">
+                        <img src="{% static 'home_module/img/bokeh_car_lights_bg.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title p-1">میکروتیک چیست؟ و چه کاربردهایی دارد؟</h5>
+                            <ul class="nav">
+                                <li class="nav-item"><i class="fa fa-user pe-1"></i>ارشیا صمیمی فر</li>
+                                <li class="nav-item ps-1">1404-05-12<i class="fa fa-clock pe-1"></i></li>
+                            </ul>
+                            <p class="card-text p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto corporis iusto maxime placeat quas reprehenderit tempore! Exercitationem expedita, iste magnam nostrum numquam recusandae repellendus sapiente. Doloremque molestiae optio voluptatibus.</p>
+                            <a href="#" class="card-link btn btn-success w-100">
+                                مشاهده
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Posts Items -->
+                <div class="col-md-6 col-lg-4 pt-4 rounded">
+                    <div class="card">
+                        <img src="{% static 'home_module/img/bokeh_car_lights_bg.jpg' %}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title p-1">میکروتیک چیست؟ و چه کاربردهایی دارد؟</h5>
+                            <ul class="nav">
+                                <li class="nav-item"><i class="fa fa-user pe-1"></i>ارشیا صمیمی فر</li>
+                                <li class="nav-item ps-1">1404-05-12<i class="fa fa-clock pe-1"></i></li>
+                            </ul>
+                            <p class="card-text p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto corporis iusto maxime placeat quas reprehenderit tempore! Exercitationem expedita, iste magnam nostrum numquam recusandae repellendus sapiente. Doloremque molestiae optio voluptatibus.</p>
+                            <a href="#" class="card-link btn btn-success w-100">
+                                مشاهده
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- News Section Starts -->
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center pt-5">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+        <!-- Pagination Starts -->
+    </div>
+</main>
+<!-- Main Section End -->
 <script src="{% static 'home_module/js/main.js' %}"></script>
 <script src="{% static 'home_module/js/bootstrap.bundle.min.js' %}"></script>
 </body>
